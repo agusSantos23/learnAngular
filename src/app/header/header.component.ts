@@ -1,6 +1,5 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
+import { input,AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
 import { TitleComponent } from '../title/title.component';
-import { log } from 'node:console';
 
 
 @Component({
@@ -11,7 +10,8 @@ import { log } from 'node:console';
 })
 export class HeaderComponent implements OnInit, AfterContentInit, AfterViewInit, OnDestroy, DoCheck, AfterContentChecked, AfterViewChecked {
 
-  pageTitle: string = "MY APP"
+  pageTitle: string = "Holaa"
+
   constructor(){
     console.log('contructor creado');
     
