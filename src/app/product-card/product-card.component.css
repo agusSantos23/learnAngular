@@ -1,0 +1,5 @@
+
+.black-and-white {
+  filter: grayscale(100%);
+  transition: .3s linear;
+}

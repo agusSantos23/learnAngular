@@ -1,0 +1,30 @@
+<div>
+  <img 
+    (mouseenter)="mouseImg()"
+    (mouseleave)="mouseImg()"
+    [class.black-and-white]="product.isBlackAndWhite"
+    [attr.src]="product.url" 
+    [alt]="product.name" 
+    [attr.description]="product.description"
+    [style.width]="product.amount > 0 ?'300px': '0px'"
+  >
+
+  
+
+  <h3>{{product.name}}</h3>
+  <p>{{product.description}}</p>
+  <button (click)="buyProduct()">Compar Carne</button>
+</div>
+
+<form 
+  [formGroup]="formEmail"
+  (ngSubmit)="orderProduct()"
+  [style.display]="!formState ? 'none' : 'block' " 
+  [style.margin-top]="'50px'"
+>
+  <label for="mail">
+    Correo:
+    <input formControlName="email" type="email" required>
+  </label>
+  <button type="submit">Enviar</button>
+</form>

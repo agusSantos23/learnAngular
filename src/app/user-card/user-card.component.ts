@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 interface Address {
   country: string
   city: string
@@ -24,10 +25,8 @@ export class UserCardComponent {
     city: "Damascus",
     street: "Liberty"
   }
-  private dni = '348927234J'
 
-  
-  
+  private dni = '348927234J'
 
   getTime(): object {
     return new Date()
