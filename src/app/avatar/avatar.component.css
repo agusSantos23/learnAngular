@@ -1,7 +1,11 @@
-h3{
-  color: red;
+
+img{
+  width: 250px;
 }
 
-p{
-  text-align: right;
+.admin{
+  width: 300px;
+}
+.sales{
+  width: 1900px;
 }

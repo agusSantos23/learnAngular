@@ -1,4 +1,12 @@
-<app-title 
+
+<header>
+
+  <app-title 
   [title] = "pageTitle" 
   (colorChange) = "colorChanged($event)"
-/>
+  />  
+
+  <app-avatar [profile]="userInfo"/>
+
+  
+</header>

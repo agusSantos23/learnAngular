@@ -1,2 +1,7 @@
-<h3>Esto es un Template</h3>
-<p>contenido</p>
+<img 
+  [ngClass]="profile().role === 'Admin' ? 'admmin' : profile().role === 'Sales' ? 'sales' : ''"
+  [src]="profile().img" 
+  [alt]="profile().role" 
+  [ngStyle]="{'border': profile().role === 'Admin' ? '10px solid black' : '1px solid yellow'}"
+>
+<h4>{{profile().role}}</h4>
