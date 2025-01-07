@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core'
-
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
-import { error } from 'node:console'
+import { UpperCasePipe, DatePipe, CurrencyPipe  } from '@angular/common';
+
 
 @Component({
   selector: 'app-product-card',
-  imports: [ReactiveFormsModule],
+  standalone: true,
+  imports: [ReactiveFormsModule, UpperCasePipe, DatePipe, CurrencyPipe],
   templateUrl: './product-card.component.html',
   styleUrl: './product-card.component.css'
 })
@@ -19,7 +20,9 @@ export class ProductCardComponent {
     description: "Comida que alimenta a los carnivoros y omnivoros",
     amount: 3,
     id: 423,
-    isBlackAndWhite: false
+    isBlackAndWhite: false,
+    date: 'Wed Sep 24 2025 21:46:15 GMT+0200 (Central European Summer Time)',
+    price: 344.32489734
   }
 
   formState = false

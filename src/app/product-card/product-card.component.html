@@ -11,8 +11,12 @@
 
   
 
-  <h3>{{product.name}}</h3>
+  <h3>{{product.name | uppercase }}</h3>
+  <h4>{{product.date | date }}</h4>
   <p>{{product.description}}</p>
+  <div>
+    <h2>{{product.price | currency }}</h2>
+  </div>
   <button (click)="buyProduct()">Compar Carne</button>
 </div>
 
